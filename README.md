@@ -102,7 +102,8 @@ Response:
   }
 ]
 ```
-![hindi](https://github.com/user-attachments/assets/a4670bd2-b28e-4c49-9069-12a6706cc9b4)
+
+![hindi](https://github.com/user-attachments/assets/fb6b1368-d135-4d13-84c9-f2550c235a98)
 
 #### 2. Get FAQs in Bengali
 ```bash
@@ -122,7 +123,8 @@ Response:
 ]
 ```
 
-![bengali](https://github.com/user-attachments/assets/a0d66d3d-07f8-4481-94c3-ace6a852868c)
+![bengali](https://github.com/user-attachments/assets/2a58f104-3544-477a-b934-ffee7fab0590)
+
 
 
 #### Admin panel
