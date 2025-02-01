@@ -82,7 +82,8 @@ Response:
   }
 ]
 ```
-![eng](https://github.com/user-attachments/assets/d08a9f19-9d14-479a-8360-fb7494b27e17)
+![englishhhh](https://github.com/user-attachments/assets/6bdc5b9a-351a-45ea-a4af-26ea01469659)
+
 
 #### 2. Get FAQs in Hindi
 ```bash
