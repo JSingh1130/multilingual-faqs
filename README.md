@@ -119,25 +119,7 @@ Response:
 ]
 ```
 
-#### 3. Create a New FAQ
-```bash
-POST /api/faqs
-```
-Request Body:
-```json
-{
-  "question": "What is Express.js?",
-  "answer": "Express.js is a web framework for Node.js."
-}
-```
-Response:
-```json
-{
-  "_id": "987654321",
-  "question": "What is Express.js?",
-  "answer": "Express.js is a web framework for Node.js."
-}
-```
+
 
 #### Admin panel
 ```bash
@@ -184,13 +166,10 @@ We welcome contributions to enhance this project. Follow these steps to contribu
 
 ---
 
-## License
-This project is licensed under the MIT License. Feel free to use and modify it as per your needs.
 
----
 
 ## Contact
 For any queries or feedback, feel free to contact:
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
+- **Email**: jatinjot28@gmail.com
+
 
