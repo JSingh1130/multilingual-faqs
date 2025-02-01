@@ -67,30 +67,150 @@ http://localhost:5000/api/faqs
 
 #### 1. Get FAQs (Default: English)
 ```bash
-GET /api/faqs
+curl http://localhost:8000/api/faqs/
 ```
 Response:
 ```json
 [
   {
-    "_id": "123456789",
+    "translations": {
+      "hi": {
+        "question": "Node.js क्या है?",
+        "answer": "Node.js is a runtime environment that allows JavaScript to run outside the browser."
+      },
+      "bn": {
+        "question": "নোড.জেএস কী?",
+        "answer": "Node.js is a runtime environment that allows JavaScript to run outside the browser."
+      }
+    },
+    "_id": "679e3223447f43d979f61ae5",
     "question": "What is Node.js?",
-    "answer": "Node.js is a runtime environment that allows JavaScript to run outside the browser."
+    "answer": "Node.js is a runtime environment that allows JavaScript to run outside the browser.",
+    "__v": 0
+  },
+  {
+    "translations": {
+      "hi": {
+        "question": "एक्सप्रेस.जेएस क्या है?",
+        "answer": "Express.js is a web framework for Node.js."
+      },
+      "bn": {
+        "question": "এক্সপ্রেস.জেএস কী?",
+        "answer": "Express.js is a web framework for Node.js."
+      }
+    },
+    "_id": "679e61f39934b9cd234b4435",
+    "question": "What is Express.js?",
+    "answer": "Express.js is a web framework for Node.js.",
+    "createdAt": "2025-02-01T18:03:31.385Z",
+    "updatedAt": "2025-02-01T18:03:31.385Z",
+    "__v": 0
+  },
+  {
+    "translations": {
+      "hi": {
+        "question": "एक्सप्रेस.जेएस क्या है?",
+        "answer": "Express.js is a web framework for Node.js."
+      },
+      "bn": {
+        "question": "এক্সপ্রেস.জেএস কী?",
+        "answer": "Express.js is a web framework for Node.js."
+      }
+    },
+    "_id": "679e62aa030364e72453d3c0",
+    "question": "What is Express.js?",
+    "answer": "Express.js is a web framework for Node.js.",
+    "createdAt": "2025-02-01T18:06:34.682Z",
+    "updatedAt": "2025-02-01T18:06:34.682Z",
+    "__v": 0
+  },
+  {
+    "translations": {
+      "hi": {
+        "question": "एक्सप्रेस.जेएस क्या है?",
+        "answer": "Express.js is a web framework for Node.js."
+      },
+      "bn": {
+        "question": "এক্সপ্রেস.জেএস কী?",
+        "answer": "Express.js is a web framework for Node.js."
+      }
+    },
+    "_id": "679e6cc60dbfe06b940a17eb",
+    "question": "What is Express.js?",
+    "answer": "Express.js is a web framework for Node.js.",
+    "createdAt": "2025-02-01T18:49:42.974Z",
+    "updatedAt": "2025-02-01T18:49:42.974Z",
+    "__v": 0
+  },
+  {
+    "translations": {
+      "hi": {
+        "question": "एक्सप्रेस.जेएस क्या है?",
+        "answer": "Express.js is a web framework for Node.js."
+      },
+      "bn": {
+        "question": "এক্সপ্রেস.জেএস কী?",
+        "answer": "Express.js is a web framework for Node.js."
+      }
+    },
+    "_id": "679e6eaad6e11445407c18b3",
+    "question": "What is Express.js?",
+    "answer": "Express.js is a web framework for Node.js.",
+    "createdAt": "2025-02-01T18:57:46.732Z",
+    "updatedAt": "2025-02-01T18:57:46.732Z",
+    "__v": 0
+  },
+  {
+    "translations": {
+      "hi": {
+        "question": "USA का पूरा नाम क्या है?",
+        "answer": "संयुक्त राज्य अमेरिका"
+      },
+      "bn": {
+        "question": "USA-এর পুরো নাম কী?",
+        "answer": "সংযুক্ত রাষ্ট্র আমেরিকা"
+      }
+    },
+    "_id": "679e711797cf361a40951063",
+    "question": "what is the full form of USA ",
+    "answer": "united states of America",
+    "updatedAt": "2025-02-01T18:30:00.000Z",
+    "createdAt": "2025-02-01T18:30:00.000Z",
+    "__v": 0
   }
 ]
 ```
 
 #### 2. Get FAQs in Hindi
 ```bash
-GET /api/faqs?lang=hi
+curl http://localhost:8000/api/faqs/?lang=hi
 ```
 Response:
 ```json
 [
   {
-    "_id": "123456789",
-    "question": "\u0928\u094b\u0921.\u091c\u0947\u0905\u0938 \u0915\u094d\u092f\u093e \u0939\u0948?",
-    "answer": "Node.js \u092f\u0947\u0915 \u0930\u0928\u091f\u093e\u0907\u092e \u090f\u0928\u094d\u0935\u093e\u092f\u0930\u092e\u0947\u0902\u091f \u0939\u0948 \u091c\u094b JavaScript \u0915\u094b \u092c\u094d\u0930\u093e\u0909\u091c\u093c\u0930 \u0915\u0947 \u092c\u093e\u0939\u0930 \u091a\u0932\u093e \u0938\u0915\u0947."
+    "question": "Node.js क्या है?",
+    "answer": "Node.js is a runtime environment that allows JavaScript to run outside the browser."
+  },
+  {
+    "question": "एक्सप्रेस.जेएस क्या है?",
+    "answer": "Express.js is a web framework for Node.js."
+  },
+  {
+    "question": "एक्सप्रेस.जेएस क्या है?",
+    "answer": "Express.js is a web framework for Node.js."
+  },
+  {
+    "question": "एक्सप्रेस.जेएस क्या है?",
+    "answer": "Express.js is a web framework for Node.js."
+  },
+  {
+    "question": "एक्सप्रेस.जेएस क्या है?",
+    "answer": "Express.js is a web framework for Node.js."
+  },
+  {
+    "question": "USA का पूरा नाम क्या है?",
+    "answer": "संयुक्त राज्य अमेरिका"
   }
 ]
 ```
