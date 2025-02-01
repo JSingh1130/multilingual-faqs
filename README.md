@@ -139,6 +139,7 @@ Run the following command to execute the test cases:
 ```bash
 npm test
  ```
+Output in Vs Code terminal:
 ```bash
 PS C:\Users\HP\multilingual-faqs> npm test
 
