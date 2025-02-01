@@ -130,7 +130,84 @@ http://localhost:5000/admin
 ```
 ![WhatsApp Image 2025-02-02 at 04 30 29_b14cecaf](https://github.com/user-attachments/assets/0c2f90c7-e000-4ed6-9fca-83e2e05b0d23)
 
+## Test Cases and Results
 
+The following are the test cases implemented for this project and their outputs:
+
+### Command to Run Tests
+Run the following command to execute the test cases:
+```bash
+npm test
+ ```
+```bash
+PS C:\Users\HP\multilingual-faqs> npm test
+
+> multilingual-faqs@1.0.0 test
+> mocha ./faq.test.cjs
+
+Server running on port 5000
+
+
+  FAQ API
+MongoDB Connected
+Redis cache cleared
+Checking Redis cache for key: faqs:en
+Cache miss. Fetching from DB...
+FAQs from DB: [
+  {
+    translations: { hi: [Object], bn: [Object] },
+    _id: 679e711797cf361a40951063,
+    question: 'what is the full form of USA ',
+    answer: 'united states of America',
+    updatedAt: 2025-02-01T18:30:00.000Z,
+    createdAt: 2025-02-01T18:30:00.000Z,
+    __v: 0
+  },
+  {
+    translations: { hi: [Object], bn: [Object] },
+    _id: 679ea05031bdd86bfc4c02a1,
+    question: 'what is this',
+    answer: 'this is my project',
+    createdAt: 2025-02-01T22:29:36.867Z,
+    updatedAt: 2025-02-01T22:29:36.867Z,
+    __v: 0
+  }
+]
+Setting cache for key: faqs:en
+    ✔ should fetch FAQs in default (English) language (87ms)
+Checking Redis cache for key: faqs:hi
+Cache miss. Fetching from DB...
+FAQs from DB: [
+  {
+    translations: { hi: [Object], bn: [Object] },
+    _id: 679e711797cf361a40951063,
+    question: 'what is the full form of USA ',
+    answer: 'united states of America',
+    updatedAt: 2025-02-01T18:30:00.000Z,
+    createdAt: 2025-02-01T18:30:00.000Z,
+    __v: 0
+  },
+  {
+    translations: { hi: [Object], bn: [Object] },
+    _id: 679ea05031bdd86bfc4c02a1,
+    question: 'what is this',
+    answer: 'this is my project',
+    createdAt: 2025-02-01T22:29:36.867Z,
+    updatedAt: 2025-02-01T22:29:36.867Z,
+    __v: 0
+  }
+]
+Setting cache for key: faqs:hi
+    ✔ should fetch FAQs in Hindi
+Cache invalidated for key: faqs:en
+Cache invalidated for key: faqs:hi
+Cache invalidated for key: faqs:bn
+    ✔ should create a new FAQ (2152ms)
+MongoDB connection closed
+
+
+  3 passing (3s)
+ ```
 
 ## Contribution Guidelines
 
